@@ -1,0 +1,19 @@
+1. Go to your octopress source directory. 
+
+2. GO to _layout\post.html,find below code and remove it.Its present in line 10 in default octopress theme.
+
+{% include post/date.html %}{{ time }}
+
+3.  Go to _layout\post.html,find below code and  remove it.Its present in Line 23 in default octopress theme.
+
+{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+
+4. Go to `_layout\page.html`,find below code and remove it.Its present in Line 10.
+
+{% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+
+Also find below code and remove it.Its present in Line 18.
+
+{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+
+Note: Please Backup your file before any change.
