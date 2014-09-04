@@ -61,6 +61,7 @@ have icons. Yes. Think about Fvwm (Linux) users like me -->
         xhr.open("POST", "https://api.imgur.com/3/image.json"); // Boooom!
         xhr.onload = function() {
             // Big win!
+            var fb = '[img]' + JSON.parse(xhr.responseText).data.link + '[/img]';
             document.querySelector("#link").href = JSON.parse(xhr.responseText).data.link;
             document.body.className = "uploaded";
         }
