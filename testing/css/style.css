@@ -82,13 +82,13 @@ font-weight: 700;
     text-align: center;
     font-weight: 700;
 }
-/* We can align the menu header to the left, but float the
-    menu items to the right. */
+/* We can align the menu header to the left, but float the menu items to the right. */
 .home-menu {
     text-align: left;
 }
 .home-menu ul {
     float: right;
+    font-size: 14px;
 }
 
 
@@ -104,7 +104,7 @@ font-weight: 700;
 }
 @media (max-width: 480px) { 
 .splash-container {  padding: 80px 0;  }
-.splash { height: 100%; }
+.splash { height: 90%; }
 .splash-head { font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 40px;  color: white;}
 .splash-subhead { color: white; letter-spacing: 0.05em; opacity: 0.8; text-align: center; font-family: Verdana, Helvetica, Arial, sans-serif; }
 }
