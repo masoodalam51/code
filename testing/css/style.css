@@ -90,7 +90,9 @@ font-weight: 700;
     float: right;
     font-size: 14px;
 }
-
+.pure-button {
+ text-align: center; 
+}
 
 
 
