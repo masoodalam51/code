@@ -265,7 +265,7 @@ $(document).ready(function () {
             var hostPattern = /^([a-zA-Z0-9-]+)$/;
             if (hostPattern.test(Domain) == false) {
                 $domain.css('background-color', '#FF9');
-                $info.html("Please enter a valid domain name but without using any prefixes or suffixes. For instance, enter techelex and not techelex.com or www.techelex.com or stb.techelex.com").show().delay(2000).fadeOut('slow');
+                $info.html("Please enter a valid domain name but without using any prefixes or suffixes. For instance, enter techelex and not techelex.org or www.techelex.org or code.techelex.org").show().delay(2000).fadeOut('slow');
             } else {
                 generate_password(User, Domain, Phrase, Len);
             }
@@ -293,7 +293,7 @@ $(document).ready(function () {
 
     $("input.typeahead").typeahead({
         name: "domain",
-        local: ["Amazon", "Apple", "Box", "BeaconBy", "Bigrock", "BlogGyaani", "ContentMarketer", "Digg", "Disqus", "DreamHost", "Dribbble", "Dropbox", "eBay", "EverNote", "Facebook", "Flipboard", "FourSquare", "GetPocket", "Github", "GoDaddy", "Google", "Gmail", "Hulu", "IFTTT", "IMDB", "Instagram", "Instapaper", "Imagify", "Kickstarter", "LinkedIn", "MyThemeShop", "MailChimp", "Mailerlite", "Netflix", "NYTimes", "Outlook", "Openshift" , "Pandora", "PayPal", "Pinboard", "Pinterest", "Quora", "Readability", "Reddit", "Skype", "SlideShare", "Stack Overflow", "StumbleUpon", "SubnetLabs", "StockUnlimited", "GetStencil", "TED", "TECHELEX", "Tumblr", "Tweetdeck", "Twitter", "Vimeo", "VPS", "Wikipedia", "WordPress", "WSJ", "Yahoo"
+        local: ["Amazon", "Apple", "Box", "BeaconBy", "Bigrock", "BlogGyaani", "ContentMarketer", "Digg", "Disqus", "DreamHost", "Dribbble", "Dropbox", "eBay", "EverNote", "Facebook", "Flipboard", "FourSquare", "GetPocket", "Github", "GoDaddy", "Google", "Gmail", "Hulu", "IFTTT", "IMDB", "Instagram", "Instapaper", "Imagify", "Kickstarter", "LinkedIn", "MyThemeShop", "MailChimp", "Mailerlite", "Netflix", "NYTimes", "Outlook", "Openshift" , "Pandora", "PayPal", "Pinboard", "Pinterest", "Quora", "Readability", "Reddit", "Skype", "SlideShare", "Stack Overflow", "StumbleUpon", "SubnetLabs", "StockUnlimited", "GetStencil", "TED", "TECHELEX", "TECHELEXCOM", "TECHELEXORG", "Tumblr", "Tweetdeck", "Twitter", "Vimeo", "VPS", "Wikipedia", "WordPress", "WSJ", "Yahoo"
                    ]
     });
 });
